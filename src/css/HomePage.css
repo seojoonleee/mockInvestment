@@ -1,0 +1,361 @@
+.hp {
+  min-height: 100vh;
+  background: #fff;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+  color: #111;
+}
+
+/* Top */
+.hpTop {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 18px;
+  border-bottom: 1px solid #ececec;
+}
+
+.hpTopLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hpBrand {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.hpSearchWrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hpSearch {
+  width: min(640px, 60vw);
+  height: 36px;
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+  background: #f2f2f2;
+  text-align: center;
+  font-size: 14px;
+}
+
+.hpTopRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hpBtn {
+  height: 34px;
+  padding: 0 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.hpBtnOutline {
+  background: #fff;
+  border: 1px solid #ff4b4b;
+  color: #ff4b4b;
+}
+
+/* 3-column body */
+.hpBody3 {
+  display: flex;
+  min-height: calc(100vh - 64px);
+}
+
+/* LEFT sidebar */
+.hpSidebar {
+  width: 300px;
+  border-right: 1px solid #e9e9e9;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.hpSideHeader {
+  padding: 14px 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.hpSideTitle {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hpSideAdd {
+  width: 100%;
+  height: 34px;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.hpSideContent {
+  padding: 10px 8px;
+  overflow: auto;
+}
+
+.hpGroup {
+  margin-bottom: 12px;
+}
+
+.hpGroupTitle {
+  font-size: 12px;
+  color: #666;
+  padding: 8px 6px;
+}
+
+.hpGroupList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hpStockRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 8px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background: #fff;
+  cursor: pointer;
+  text-align: left;
+}
+
+.hpStockRow:hover {
+  background: #fafafa;
+}
+
+.hpStockRow.isActive {
+  border-color: #e1e1e1;
+  background: #f7f7f7;
+}
+
+.hpStockLogo {
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  background: #f0f0f0;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  flex: 0 0 auto;
+}
+
+.hpStockMeta {
+  min-width: 0;
+  flex: 1;
+}
+
+.hpStockName {
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hpStockCode {
+  font-size: 12px;
+  color: #888;
+}
+
+.hpStockNums {
+  text-align: right;
+  flex: 0 0 auto;
+}
+
+.hpStockPrice {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.hpStockChange {
+  font-size: 12px;
+  color: #666;
+}
+
+.hpStockChange.isUp {
+  color: #ff4b4b;
+}
+
+.hpStockChange.isDown {
+  color: #2a66ff;
+}
+
+/* CENTER chart area */
+.hpCenter {
+  flex: 1;
+  border-right: 1px solid #e9e9e9;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.hpCenterHeader {
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.hpCenterName {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.hpCenterCode {
+  font-weight: 600;
+  font-size: 13px;
+  color: #777;
+  margin-left: 6px;
+}
+
+.hpCenterPriceLine {
+  margin-top: 4px;
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.hpCenterPrice {
+  font-size: 16px;
+  font-weight: 800;
+  color: #2a66ff;
+}
+
+.hpCenterChange {
+  font-size: 13px;
+  color: #2a66ff;
+}
+
+.hpCenterActions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.hpIconBtn {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.hpActionBtn {
+  height: 32px;
+  padding: 0 14px;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.hpActionBtn.hpBuy {
+  border-color: rgba(255, 75, 75, 0.4);
+  background: rgba(255, 75, 75, 0.12);
+  color: #ff4b4b;
+}
+
+.hpActionBtn.hpSell {
+  border-color: rgba(42, 102, 255, 0.35);
+  background: rgba(42, 102, 255, 0.10);
+  color: #2a66ff;
+}
+
+.hpChartWrap {
+  flex: 1;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hpChartPlaceholder {
+  flex: 1;
+  border-radius: 14px;
+  border: 1px dashed #d8d8d8;
+  background: #fafafa;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 18px;
+}
+
+.hpVolumePlaceholder {
+  height: 160px;
+  border-radius: 14px;
+  border: 1px dashed #d8d8d8;
+  background: #fafafa;
+  display: grid;
+  place-items: center;
+}
+
+.hpChartHint {
+  font-weight: 800;
+}
+
+.hpChartSubHint {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #666;
+}
+
+/* RIGHT tabs */
+.hpRight {
+  width: 420px;
+  min-width: 360px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.hpTabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 56px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.hpTab {
+  border: 0;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.hpTab.isActive {
+  font-weight: 800;
+  border-bottom: 2px solid #111;
+}
+
+.hpRightContent {
+  padding: 14px;
+  overflow: auto;
+}
+
+.hpPlaceholderCard {
+  height: 180px;
+  border-radius: 14px;
+  border: 1px solid #efefef;
+  background: #fafafa;
+  display: grid;
+  place-items: center;
+  color: #555;
+  font-weight: 700;
+}
